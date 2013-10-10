@@ -158,7 +158,7 @@ class AdvancedIntersectionMapTool(QgsMapTool):
          # check that dimension layer and fields have been set correctly
         while True:
             # check layer
-            if not self.settings.value("dimensionWriteObservation"):
+            if not self.settings.value("advancedIntersectionPlaceDimension"):
                 return  # if we do not place any dimension, skip
             dimensionLayerId = self.settings.value("dimensionLayer")
             message = "To place dimension arcs, you must select a layer in the settings."

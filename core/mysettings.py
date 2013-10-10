@@ -53,8 +53,10 @@ class MySettings(SettingManager):
 
         # project settings
         self.addSetting("simpleIntersectionWritePoint", "bool", "project", False)
+        self.addSetting("simpleIntersectionPlaceDimension", "bool", "project", True)
         self.addSetting("advancedIntersectionWritePoint", "bool", "project", False)
         self.addSetting("advancedIntersectionWriteReport", "bool", "project", False)
+        self.addSetting("advancedIntersectionPlaceDimension", "bool", "project", True)
         self.addSetting("dimensionWriteObservation", "bool", "project", False)
         self.addSetting("dimensionWriteMeasure", "bool", "project", True)
         self.addSetting("dimensionWriteType", "bool", "project", False)

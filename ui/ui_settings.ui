@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>421</width>
-    <height>349</height>
+    <height>405</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -430,6 +430,13 @@
             </property>
            </widget>
           </item>
+          <item row="4" column="0" colspan="3">
+           <widget class="QCheckBox" name="advancedIntersectionPlaceDimension">
+            <property name="text">
+             <string>place dimensions</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
@@ -453,6 +460,13 @@
             </property>
             <property name="sizeAdjustPolicy">
              <enum>QComboBox::AdjustToContents</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QCheckBox" name="simpleIntersectionPlaceDimension">
+            <property name="text">
+             <string>place dimensions</string>
             </property>
            </widget>
           </item>
@@ -512,16 +526,6 @@
          </property>
         </spacer>
        </item>
-       <item row="0" column="0" colspan="2">
-        <widget class="QCheckBox" name="dimensionWriteObservation">
-         <property name="text">
-          <string>place dimensions in layer</string>
-         </property>
-         <property name="checked">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
        <item row="5" column="1">
         <spacer name="verticalSpacer">
          <property name="orientation">
@@ -553,6 +557,13 @@
         <widget class="QCheckBox" name="dimensionCheckType">
          <property name="text">
           <string>Check type when editing</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>place dimensions in layer</string>
          </property>
         </widget>
        </item>
@@ -596,22 +607,6 @@
     <hint type="destinationlabel">
      <x>257</x>
      <y>166</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>dimensionWriteObservation</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>dimensionLayer</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>125</x>
-     <y>61</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>325</x>
-     <y>61</y>
     </hint>
    </hints>
   </connection>
