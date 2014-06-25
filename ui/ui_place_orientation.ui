@@ -122,7 +122,7 @@
    <item row="3" column="4">
     <widget class="QDoubleSpinBox" name="length">
      <property name="decimals">
-      <number>2</number>
+      <number>4</number>
      </property>
      <property name="maximum">
       <double>10000.000000000000000</double>
